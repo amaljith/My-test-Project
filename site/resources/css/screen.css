@@ -191,7 +191,12 @@ ul.buzz{width:280px; margin:5px auto}
 #content-wraper #sidebar ul#accordion-1 li.main-item-sidemenu .list-items a:hover{}
 #content-wraper #sidebar ul#accordion-1 li.main-item-sidemenu ul.children-menu{border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;margin: 10px 0 0 0;padding: 10px; background: none repeat scroll 0 0 #747474; font-size:12px}
 #content-wraper #sidebar ul#accordion-1 li.main-item-sidemenu .list-items{background:url(../img/side-bar-menubg.jpg) no-repeat; border-radius: 3px 3px 3px 3px;margin:2px} 
-#content-wraper #content-area h1{}
+#content-wraper #content-area h3{ font-size:25px}
 #content-wraper #content-area{ padding:20px; margin:0}
+#content-wraper #content-area h1{ font-size:30px; color:#1B8399}
 #content-wraper #content-area .content-images{ margin:10px 0}
 #content-wraper #content-area p{color:#666; font-family:Verdana, Geneva, sans-serif; font-size:12px; line-height:16px}
+#content-wraper #content-area h4,#content-wraper #content-area h1{color:#1B8399}
+#content-wraper #content-area ul#content-list li{ background: url(../img/bullet_list.png) no-repeat scroll 0 8px transparent;padding: 5px 0 5px 25px; width:600px}
+#content-wraper #content-area h1,#content-wraper #content-area h3,#content-wraper #sidebar ul#accordion-1{font-family:'Oswald';}
+#content-wraper #content-area h4{ font-size:24px;padding:10px 0}
