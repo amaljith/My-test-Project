@@ -30,7 +30,7 @@ body{cursor:default;background:url(../img/body-bg.jpg) repeat-x top left scroll;
 
 /*-----------------------------------Header Theam------------------------------*/
 
-#header{background:url(../img/header-background.jpg) no-repeat scroll center;}
+#header{background:url(../img/header-background.jpg) no-repeat scroll center; padding:30px}
 #company-logo{background:url(../img/company-logo.png) no-repeat top left transparent scroll;margin:20px 0 0 0}
 
 /*-----------------------------------Menu Theam---------------------------------*/
@@ -200,3 +200,5 @@ ul.buzz{width:280px; margin:5px auto}
 #content-wraper #content-area ul#content-list li{ background: url(../img/bullet_list.png) no-repeat scroll 0 8px transparent;padding: 5px 0 5px 25px; width:600px}
 #content-wraper #content-area h1,#content-wraper #content-area h3,#content-wraper #sidebar ul#accordion-1{font-family:'Oswald';}
 #content-wraper #content-area h4{ font-size:24px;padding:10px 0}
+#content-wraper #content-area .content-images-2{ float:left; margin-right:20px}
+#content-wraper #content-area .content-images-3{ margin-bottom:20px}
