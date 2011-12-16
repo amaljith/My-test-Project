@@ -1,0 +1,86 @@
+/*=================================amaljith-uidesigner CSS=====================================
+
+File:             Layout Structure
+Author:           Amaljith & Jones V Rajan
+Created On:       10.11.2011
+Version:          1.0v
+Mode:             CSS3
+Website:          http://www.amaljith-uidesigner.co.in
+
+=================================================================================*/
+
+
+/*-------------------------------------------------------------------------------*/
+                           /*COMMON COMPONENTS*/
+/*-------------------------------------------------------------------------------*/
+
+*{padding:0;margin:0;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,input,hr,label,legend,table,caption,tbody,tfoot,thead,tr,th,td ,input,textarea{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;/*font-family:Tahoma, Geneva, sans-serif;*/vertical-align:baseline}
+li{list-style:none}
+a{text-decoration:none}
+input,textarea,select,option{font-size:11px; color:#666}
+html,body{}
+.clear{clear:both}
+
+/*-------------------------------------------------------------------------------*/
+                           /* FONTS */
+/*-------------------------------------------------------------------------------*/
+
+/*@font-face {font-family: 'YanoneKaffeesatzThin';src: url('../fonts/YanoneKaffeesatz-Thin.ttf');}
+@font-face {font-family: 'LatoHairline';src: url('../fonts/Lato-Hairline.ttf');}*/
+@font-face {font-family: 'Gill-sans-ext-mt-bold';src: url('../fonts/Gill-sans-ext-mt-bold.ttf');}
+
+/*-------------------------------------------------------------------------------*/
+                           /*COMMON LAYOUT STUCTURE*/
+/*-------------------------------------------------------------------------------*/
+#wraper{width:100%; height:auto; margin:auto}
+#header{width:960px; height:100px; margin:auto}
+	#heder-inner{width:960px;height:206px;margin:auto}
+#banner-container{width:960px; height:350px;margin:auto}
+#banner{width:960px; height:300px;}
+#banner img{width:960px; height:300px;}
+#content-wraper{width:960px;height:auto;margin:0px auto}
+	#content-Container{width:960px; height:auto;margin:auto}
+		#content-area{width:680px;height:auto;float:right;}
+		#sidebar{width:220px;height:auto;float:left;}
+			#graph-container{width:220px;height:432px; clear:both;border-radius:10px;}
+			#s-media-box{width:220px;height:100px; margin-top:50px}
+			
+#footer{width:100%; height:50px; margin:20px auto 0; clear:both}
+	#footer-container{width:960px;height:40px;margin:auto}
+
+#tools-container{width:61px;height:422px;position:fixed;top:-380px; left:20px;z-index:5000; clear:both}
+#fb-like{width:430px;height:80px;position:fixed;bottom:5px;left:-430px;padding:10px}
+#resume-container{width:61px;height:112px;position:fixed;top:-70px;right:20px;z-index:5000}
+.non-border{border:none;border-left:none}
+
+/*-------------------------------------------------------------------------------*/
+/*////////////////////////////COMMON LAYOUT STUCTURE/////////////////////////////*/
+/*-------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------Header Items--------------------------------*/
+#company-logo{width:233px;height:80px;float:left;}
+#navigation-Container{width:600px;height:206px;float:right;}
+
+/*-----------------------------------Menu Items----------------------------------*/
+#navigation{height:40px;float:right}
+
+/*-----------------------------------Contents ------------------------------------*/
+
+#left-content-panel{width:250px; height:auto;min-height:800px;padding-bottom:20px;float:left}
+	#submit-quiry-box{width:184px;height:358px; float:left}
+		#members-login-container{width:566px; height:58px;border-top-right-radius:10px;-moz-border-radius-topright:10px;padding:10px 0 0 0}
+		#members-login{width:566px;height:30px;}
+		#banner-shade-bg{width:750px;height:16px; background:url(../img/banner-shade-bg.jpg) no-repeat left top scroll}
+#tabbed-content-container{width:250px; height:auto;}
+#content-area ul{margin:0px;padding:0px; float:left;display:block; width:300px}
+#activites{margin:0px;padding:0px; float:left;display:block;}
+ul#activites li{margin:1px 1px;width:380px;height:30px}
+
+/*-----------------------------------Components customizing------------------------------------*/		
+input{width: 140px; height: 16px;padding:3px 8px;-moz-border-radius: 10px;border-radius: 10px;overflow: hidden;}
+textarea{width: 140px;height:100px;padding:3px 8px;-moz-border-radius: 10px;border-radius: 10px;overflow: hidden;}
+select{border:1px solid #000}
+.select{position:absolute;width:220px;height:16px;-moz-border-radius:15px;border-radius:15px;}
+option{width:28px; padding:5px 180px 5px 5px}

@@ -1,0 +1,97 @@
+/*=================================ZIGMALAND CSS=====================================
+
+File:             Theam Fetcher
+Author:           Amaljith & Jones V Rajan
+Created On:       10.11.2011
+Version:          1.0v
+Mode:             CSS3
+Website:          http://www.amaljith-uidesigner.co.in
+
+=================================================================================*/
+
+body{
+text-shadow: 1px 1px 1px #fff;
+filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+
+#navigation ul li{
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: px;
+-webkit-border-radius: 10px px 10px px;
+border-radius: 10px px 10px px; 
+background: #eeeeee;
+background: -moz-linear-gradient(top,  #fff 0%, #EBEDEE 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#EBEDEE));
+background: -webkit-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+background: -o-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+background: -ms-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+background: linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#EBEDEE',GradientType=0 );
+
+-webkit-box-shadow: inset 0px 0px 2px 2px #ccc;
+-moz-box-shadow: inset 0px 0px 2px 2px #ccc;
+box-shadow: inset 0px 0px 2px 2px #ccc; 
+
+}
+
+#navigation ul li:hover{
+background: -moz-linear-gradient(top,  #cccccc 0%, #eeeeee 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee));
+background: -webkit-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+background: -o-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+background: -ms-linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+background: linear-gradient(top,  #cccccc 0%,#eeeeee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=0 );
+-webkit-box-shadow: inset 0px 0px 2px 1px #ffffff;
+-moz-box-shadow: inset 0px 0px 2px 1px #ffffff;
+box-shadow: inset 0px 0px 2px 1px #ffffff; 
+}
+
+#banner img{
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px; }
+
+#title-content{
+-webkit-box-shadow: inset 0px 0px 2px 1px #ccc;
+-moz-box-shadow: inset 0px 0px 2px 1px #ccc;
+box-shadow: inset 0px 0px 2px 1px #ccc; 
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;  
+
+}
+
+#catogery-container .catogery-box{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;  
+background: #eeeeee;
+background: -moz-linear-gradient(top,  #fff 0%, #EBEDEE 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#EBEDEE));
+background: -webkit-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+background: -o-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+background: -ms-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+background: linear-gradient(top,  #fff 0%,#EBEDEE 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#EBEDEE',GradientType=0 );
+-webkit-box-shadow: inset 0px 0px 2px 2px #b1b1b1;
+-moz-box-shadow: inset 0px 0px 2px 2px #b1b1b1;
+box-shadow: inset 0px 0px 2px 2px #b1b1b1; 
+}
+
+#catogery-container .catogery-box h3{
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: px;
+-moz-border-radius-bottomleft: px;
+-webkit-border-radius: 5px 5px px px;
+border-radius: 5px 5px px px; }
+
+
+
+.clearfix:after{content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix{display: inline-block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
