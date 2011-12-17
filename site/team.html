@@ -27,7 +27,17 @@ Last Update:      10.11.2011
 <!--sidemenu-->
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
 
-<script src="resources/js/jquery.js" type="application/javascript"></script>
+<!--=============-----------Scripts-----------=========================-->
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+<script type="text/javascript" src="resources/js/easySlider1.7.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#slider").easySlider({
+				auto: true, 
+				continuous: true
+			});
+		});	
+	</script>
 <script src="resources/js/ddaccordion.js" type="application/javascript"></script>
 <script type="text/javascript">
 
@@ -136,6 +146,7 @@ loadedobjects+=file+" " //Remember this object as being already added to page
                 <li><a href="how-we-do-it.html">How we do it</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
                 <li class="smedia"><a href="#"><img src="resources/img/ico_facebook.png" /></a></li>
                 <li class="smedia"><a href="#"><img src="resources/img/ico_linkedin.png" /></a></li>
                 <li class="smedia"><a href="#"><img src="resources/img/ico_twitter.png" /></a></li>
@@ -145,7 +156,7 @@ loadedobjects+=file+" " //Remember this object as being already added to page
     </div>
 		
     <div id="content-wraper">
-    	
+
         <div id="sidebar" class="clearfix">
 			<div id="dropmenu" >
            	  <div class="">
@@ -167,15 +178,59 @@ loadedobjects+=file+" " //Remember this object as being already added to page
             </div>
 			</div>        
     </div>
-        <div id="content-area" class="clearfix">
-        <div id="rightcolumn">
-        <h1>Application Development</h1>
-        <div class="content-images"><img src="resources/img/app-develp2.jpg" width="670" height="218" alt="Application developement" /></div>
-        <p>XMinds offers their experience, proven methodologies, and the best expert talent pool in the industry to fulfill all your application development needs. Our team of architects, technical consultants, project managers, and domain experts is at your disposal to assist you in providing you with top-quality and reliable application development services.
 
-XMinds deploys best practices, development methodologies and time-tested optimum delivery models for developing and delivering applications on a fixed time, fixed cost basis.</p>
-        
+        <div id="content-area" class="clearfix">
+
+			<div id="catogery-container" class="clearfix">
+       		<div class="catogery-box">
+            <h3>Who we work with</h3>
+            <div id="slider">
+                <ul>				
+                    <li><a href="http://templatica.com/preview/30"><img src="resources/img/client-posse.jpg" alt="Css Template Preview" /></a></li>
+                    <li><a href="http://templatica.com/preview/7"><img src="resources/img/client-podcast.jpg" alt="Css Template Preview" /></a></li>
+                    <li><a href="http://templatica.com/preview/25"><img src="resources/img/client-realstream.jpg" alt="Css Template Preview" /></a></li>
+                    <li><a href="http://templatica.com/preview/26"><img src="resources/img/client-friendsrose.jpg" alt="Css Template Preview" /></a></li>
+                    <li><a href="http://templatica.com/preview/27"><img src="resources/img/client-liqia.jpg" alt="Css Template Preview" /></a></li>			
+                </ul>
+            </div>
+            
+            </div>
+            <div class="catogery-box">
+            <h3>Buzz in Xminds</h3>
+            	<ul class="buzz">
+                	<li>
+                    	<a title="'Permanent link to Scrum" rel="bookmark" href="http://wwwt.xminds.com/scrum/">Scrum</a>
+                       <p><span>Author: <a title="Posts by admin" href="http://wwwt.xminds.com/author/admin/">admin</a></span> | 
+                       <span>Posted on  December 9th, 2011</span>| <span>no responses</span></p>
+                    </li>
+                    <li>
+                    	<a title="'Permanent link to Scrum" rel="bookmark" href="http://wwwt.xminds.com/scrum/">MVP</a>
+                       <p><span>Author: <a title="Posts by admin" href="http://wwwt.xminds.com/author/admin/">admin</a></span> | 
+                       <span>Posted on  December 9th, 2011</span>| <span>no responses</span></p>
+                    </li>
+                    <li>
+                    	<a title="'Permanent link to Scrum" rel="bookmark" href="http://wwwt.xminds.com/scrum/">Scrum</a>
+                       <p><span>Author: <a title="Posts by admin" href="http://wwwt.xminds.com/author/admin/">admin</a></span> | 
+                       <span>Posted on  December 9th, 2011</span>| <span>no responses</span></p>
+                    </li>
+                    <li>
+                    	<a title="'Permanent link to Scrum" rel="bookmark" href="http://wwwt.xminds.com/scrum/">MVP</a>
+                       <p><span>Author: <a title="Posts by admin" href="http://wwwt.xminds.com/author/admin/">admin</a></span> | 
+                       <span>Posted on  December 9th, 2011</span>| <span>no responses</span></p>
+                    </li>
+                    
+                </ul>
         </div>
+            <div class="catogery-box">
+            <h3>Case Study</h3> 
+            <span class="casestudy">
+            <h4>Lorem Ipsum</h4> 
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p> 
+            <a href="#">Sudheer Srineevasan</a>
+            </span>
+            </div>
+       </div>
+				
         </div>
     </div>    
         

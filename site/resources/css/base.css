@@ -46,7 +46,7 @@ html,body{}
 			#graph-container{width:220px;height:432px; clear:both;border-radius:10px;}
 			#s-media-box{width:220px;height:100px; margin-top:50px}
 			
-#footer{width:100%; height:50px; margin:20px auto 0; clear:both}
+#footer{width:100%; height:50px; margin:0 auto 0; clear:both}
 	#footer-container{width:960px;height:40px;margin:auto}
 
 #tools-container{width:61px;height:422px;position:fixed;top:-380px; left:20px;z-index:5000; clear:both}
