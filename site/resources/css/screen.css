@@ -225,15 +225,10 @@ ul.buzz{width:280px; margin:5px auto}
 #content-wraper #content-area label{clear:both; margin:5px}
 #content-wraper #content-area input{ width:500px !important; margin:25px}
 #commentinput{ width:500px; margin:10px 0}
-
-#sidebar #dropmenu ul.submenu{    background: none repeat scroll 0 0 #747474;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    font-size: 12px;
-    ;
-    padding: 10px;}
+#sidebar #dropmenu ul.submenu{background: none repeat scroll 0 0 #747474;border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;font-size: 12px;padding: 10px;}
 	
 #sidebar #dropmenu ul.submenu li	{background: url("../img/side-bar-menubg.jpg") no-repeat scroll 0 0 transparent;
     border-radius: 3px 3px 3px 3px;
     margin: 2px;}
 	#sidebar #dropmenu ul.submenu li a{ padding:10px}
+#jira{ font-size:16px !important}
