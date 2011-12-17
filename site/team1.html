@@ -26,29 +26,102 @@ Last Update:      10.11.2011
 <![endif]-->
 <!--sidemenu-->
 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
-<!--<link href="resources/css/dcaccordion.css" rel="stylesheet" type="text/css" />-->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type='text/javascript' src='resources/js/jquery.cookie.js'></script>
-<script type='text/javascript' src='resources/js/jquery.hoverIntent.minified.js'></script>
-<script type='text/javascript' src='resources/js/jquery.dcjqaccordion.2.7.min.js'></script>
-<script type="text/javascript">
-$(document).ready(function($){
-					$('#accordion-1').dcAccordion({
-						eventType: 'click',
-						autoClose: true,
-						saveState: true,
-						disableLink: true,
-						speed: 'slow',
-						showCount: true,
-						autoExpand: true,
-						cookie	: 'dcjq-accordion-1',
-						classExpand	 : 'dcjq-current-parent'
-					});
-});
-$("a.active").parent("li").addClass("selec");
 
+<script src="resources/js/jquery.js" type="application/javascript"></script>
+<script src="resources/js/ddaccordion.js" type="application/javascript"></script>
+<script type="text/javascript">
+
+ddaccordion.init({
+	headerclass: "headerbar", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "mouseover", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: true, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "normal", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
 
 </script>
+
+<script type="text/javascript">
+
+/***********************************************
+* Dynamic Ajax Content- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var loadedobjects=""
+var rootdomain="http://"+window.location.hostname
+
+function ajaxpage(url, containerid){
+var page_request = false
+if (window.XMLHttpRequest) // if Mozilla, Safari etc
+page_request = new XMLHttpRequest()
+else if (window.ActiveXObject){ // if IE
+try {
+page_request = new ActiveXObject("Msxml2.XMLHTTP")
+} 
+catch (e){
+try{
+page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+catch (e){}
+}
+}
+else
+return false
+page_request.onreadystatechange=function(){
+loadpage(page_request, containerid)
+}
+page_request.open('GET', url, true)
+page_request.send(null)
+}
+
+function loadpage(page_request, containerid){
+if (page_request.readyState == 4 && (page_request.status==200 || window.location.href.indexOf("http")==-1))
+document.getElementById(containerid).innerHTML=page_request.responseText
+}
+
+function loadobjs(){
+if (!document.getElementById)
+return
+for (i=0; i<arguments.length; i++){
+var file=arguments[i]
+var fileref=""
+if (loadedobjects.indexOf(file)==-1){ //Check to see if this object has not already been added to page before proceeding
+if (file.indexOf(".js")!=-1){ //If object is a js file
+fileref=document.createElement('script')
+fileref.setAttribute("type","text/javascript");
+fileref.setAttribute("src", file);
+}
+else if (file.indexOf(".css")!=-1){ //If object is a css file
+fileref=document.createElement("link")
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("type", "text/css");
+fileref.setAttribute("href", file);
+}
+}
+if (fileref!=""){
+document.getElementsByTagName("head").item(0).appendChild(fileref)
+loadedobjects+=file+" " //Remember this object as being already added to page
+}
+}
+}
+
+</script>
+
 </head>
 
 <body>
@@ -60,6 +133,7 @@ $("a.active").parent("li").addClass("selec");
         <div id="navigation">
         	<ul>
             	<li><a href="index.html">Home</a></li>
+                <li><a href="how-we-do-it.html">How we do it</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li class="smedia"><a href="#"><img src="resources/img/ico_facebook.png" /></a></li>
@@ -73,40 +147,34 @@ $("a.active").parent("li").addClass("selec");
     <div id="content-wraper">
     	
         <div id="sidebar" class="clearfix">
-        
-        
-        <ul class="accordion" id="accordion-1">
-
-            <li class="main-item-sidemenu">
-            <a class="heading-list active" href="#">Application Development</a>
-            <ul class="children-menu">
-                    <li class="list-items"><a href="#">Social Media Applications</a></li>
-                    <li class="list-items"><a href="#">Web based Solutions</a></li>
-                 
+			<div id="dropmenu" >
+           	  <div class="">
+                <h3 id="main" headerindex="0h" class="headerbar selected">
+                    <a href="javascript:ajaxpage('application-developement.html', 'rightcolumn');">Application developement</a>
+                </h3>
+                <ul style="display: block;" contentindex="0c" class="submenu">
+                <li><a href="javascript:ajaxpage('web-applications.html', 'rightcolumn');">Web Based Solutions</a></li>
+                <li><a href="javascript:ajaxpage('social-media-applications.html', 'rightcolumn');">Social Media Application</a></li>
                 </ul>
-            </li>
-                 <li class="main-item-sidemenu">
-            <a class="heading-list" href="#">Mobile Applications</a>
-            <ul class="children-menu">
-                    <li class="list-items"><a href="#">Cross Platform</a></li>
-                    <li class="list-items"><a href="#">iOS (iPhone & iPad) & Android</a></li>
-               </ul>
-            </li>
-                 <li class="main-item-sidemenu">
-            <a class="heading-list" href="#">Testing / QA Services</a> </li>
-        </ul>
-   
-        
-        
-        </div>
+                
+                <h3 headerindex="1h" class="headerbar"><a href="mobile-developement.html">Mobile Applications</a></h3>
+                <ul style="display: none;" contentindex="1c" class="submenu">
+                <li><a href="javascript:ajaxpage('iphone-ipad.html', 'rightcolumn');">iOS (iPhone & iPad) & Android</a></li>
+                <li><a href="javascript:ajaxpage('cross-platform.html', 'rightcolumn');">Cross Platform</a></li>
+                </ul>
+                <h3 headerindex="1h" class="headerbar"><a href="quality-analysis.html">Testing / QA Services</a></h3>
+            </div>
+			</div>        
+    </div>
         <div id="content-area" class="clearfix">
+        <div id="rightcolumn">
         <h1>Application Development</h1>
         <div class="content-images"><img src="resources/img/app-develp2.jpg" width="670" height="218" alt="Application developement" /></div>
         <p>XMinds offers their experience, proven methodologies, and the best expert talent pool in the industry to fulfill all your application development needs. Our team of architects, technical consultants, project managers, and domain experts is at your disposal to assist you in providing you with top-quality and reliable application development services.
 
 XMinds deploys best practices, development methodologies and time-tested optimum delivery models for developing and delivering applications on a fixed time, fixed cost basis.</p>
         
-        
+        </div>
         </div>
     </div>    
         
@@ -115,7 +183,5 @@ XMinds deploys best practices, development methodologies and time-tested optimum
 </div>       
 
 </div>
-
-
 </body>
 </html>

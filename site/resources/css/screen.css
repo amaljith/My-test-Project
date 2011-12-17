@@ -185,7 +185,7 @@ ul.buzz{width:280px; margin:5px auto}
 #sidebar #dropmenu ul.submenu li,#sidebar #dropmenu  h3.selected{ background:url(../img/side-bar-menubg-hover.jpg) no-repeat; font-size:14px;color:#FFF}
 #sidebar #dropmenu  h3.selected a{color:#fff}
 #sidebar #dropmenu ul.submenu li a{ color:#fff}
-#sidebar #dropmenu  ul li a{font-size:18px;color:#666;padding:10px 50px}
+#sidebar #dropmenu  ul li a{font-size:18px;color:#666;padding:20px 30px}
 #sidebar #dropmenu  h3 a{font-size:22px;color:#666;padding:15px 20px}
 
 #content-wraper #sidebar ul#accordion-1 li.main-item-sidemenu { background:url(../img/side-bar-menubg.jpg) no-repeat; font-size:14px}

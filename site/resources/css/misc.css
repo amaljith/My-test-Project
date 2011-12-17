@@ -89,7 +89,13 @@ box-shadow: inset 0px 0px 2px 2px #b1b1b1;
 -webkit-border-radius: 5px 5px px px;
 border-radius: 5px 5px px px; }
 
-
+#sidebar #dropmenu  h3#main{
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 0px;
+-moz-border-radius-bottomright: 0px;
+-moz-border-radius-bottomleft: 0px;
+-webkit-border-radius: 5px 0px 0px 0px;
+border-radius: 5px 0px 0px 0px;}
 
 .clearfix:after{content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
 .clearfix{display: inline-block;}
