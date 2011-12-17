@@ -25,6 +25,35 @@ Last Update:      10.11.2011
         <link rel="stylesheet" type="text/css" href="resources/css/ie.css" media="screen,projection" />
 <![endif]-->
 
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
+<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+
 </head>
 
 <body>
@@ -49,36 +78,8 @@ Last Update:      10.11.2011
     </div>
 		
     <div id="content-wraper" class="clearfix">
-    	
-        <div id="sidebar" class="clearfix">
-        
-        
-       <ul class="accordion" id="accordion-1">
-
-            <li class="main-item-sidemenu">
-            <a class="heading-list" href="application-developement.html">Application Development</a>
-            <ul class="children-menu">
-                    <li class="list-items"><a href="social-media-applications.html">Social Media Applications</a></li>
-                    <li class="list-items"><a href="web-applications.html">Web based Solutions</a></li>
-                 
-                </ul>
-            </li>
-                 <li class="main-item-sidemenu">
-            <a class="heading-list" href="mobile-developement.html">Mobile Applications</a>
-            <ul class="children-menu">
-                    <li class="list-items"><a href="cross-platform.html">Cross Platform</a></li>
-                    <li class="list-items"><a href="iphone-ipad.html">iOS (iPhone & iPad) & Android</a></li>
-               </ul>
-            </li>
-                 <li class="main-item-sidemenu">
-            <a class="heading-list" href="#">Testing / QA Services</a> </li>
-        </ul>
-   
-        
-        
-        </div>
-        <div id="content-area" class="clearfix">
-       <h1>Contact Us</h1>
+      <div id="content-area" class="clearfix">
+<h1>Contact Us</h1>
                     <h2 class="enquiry">If you have an Enquiry!&nbsp; OR &nbsp;
            If you need a Quote! &nbsp; OR&nbsp;
            If you want to just say Hi!</h2>
@@ -99,34 +100,33 @@ Last Update:      10.11.2011
 
 
 			
-<form id="contact" action="http://wwwt.xminds.com/wp-content/themes/boldy/sendmail.php" method="post">
-     <label for="contact-type" class="clearfix">Regarding *</label>
-          <select name="Contact type">
-<option value="Software Developement">Software Developement</option>
-<option value="Mobile Application Developement">Mobile Application Developement</option>
-<option value="Quality Assurance">Quality Assurance</option>
-</select>
-            <label for="subject">Subject *</label>
-             <input type="text" id="nameinput" class="clearfix" name="subject" value=""/>
-			<label for="name">Your name: *</label>
+<form action="mailer.php" method="post" name="form1" id="form1" style="margin:0px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px; width:300px;" onsubmit="MM_validateForm('from','','RisEmail','subject','','R','verif_box','','R','message','','R');return document.MM_returnValue">
 
-				<input type="text" id="nameinput" class="clearfix" name="name" value=""/>
-               
-			<label for="email">Your email: *</label>
-             <input type="text" id="emailinput" class="clearfix" name="email" value=""/>
-             <label for="website">Website </label>
-             <input type="text" id="emailinput" class="clearfix" name="email" value=""/>
-			<label for="comment">Your message: *</label>
-				<textarea cols="50" rows="7" id="commentinput" class="clearfix" name="comment"></textarea><br />
-        <div class="antispam-verification">
-        <h3 class="anti-spam">Enter the text, If you are a human</h3>
-            <img src="resources/img/image.jpg" width="300" height="57" alt="Anti-spam" /></div>
-                 <br >
-            <input type="text" id="emailinput" name="email" value=""/>
-			<input type="submit" id="submitinput" name="submit" class="submit" value="SAY HELLO!"/>
-			<input type="hidden" id="receiver" name="receiver" value=""/>
+Your e-mail:<br />
+<input name="from" type="text" id="from" style="padding:2px; border:1px solid #CCCCCC; width:180px; height:14px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:11px;" value="<?php echo $_GET['from'];?>"/>
+<br />
+<br />
 
-			</form>
+Subject:<br />
+<input name="subject" type="text" id="subject" style="padding:2px; border:1px solid #CCCCCC; width:180px; height:14px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;" value="<?php echo $_GET['subject'];?>"/>
+<br />
+<br />
+
+Type verification image:<br />
+<input name="verif_box" type="text" id="verif_box" style="padding:2px; border:1px solid #CCCCCC; width:180px; height:14px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;"/>
+<img src="verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image, type it in the box" width="50" height="24" align="absbottom" /><br />
+<br />
+
+<!-- if the variable "wrong_code" is sent from previous page then display the error field -->
+<?php if(isset($_GET['wrong_code'])){?>
+<div style="border:1px solid #990000; background-color:#D70000; color:#FFFFFF; padding:4px; padding-left:6px;width:295px;">Wrong verification code</div><br /> 
+<?php ;}?>
+
+Message:<br />
+<textarea name="message" cols="6" rows="5" id="message" style="padding:2px; border:1px solid #CCCCCC; width:300px; height:100px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;"><?php echo $_GET['message'];?></textarea>
+<noscript><a href="http://www.thewebhelp.com" style="display:none;">contact form by thewebhelp</a></noscript>
+<input name="Submit" type="submit" style="margin-top:10px; display:block; border:1px solid #000000; width:100px; height:20px;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; padding-left:2px; padding-right:2px; padding-top:0px; padding-bottom:2px; line-height:14px; background-color:#EFEFEF;" value="Send Message"/>
+</form>
 			
         
         
@@ -139,6 +139,27 @@ Last Update:      10.11.2011
 
 </div>
 
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contact_form");
+//remove the following two lines if you like error message box popups
+frmvalidator.EnableOnPageErrorDisplaySingleBox();
+frmvalidator.EnableMsgsTogether();
+
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<script language='JavaScript' type='text/javascript'>
+function refreshCaptcha()
+{
+	var img = document.images['captchaimg'];
+	img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+}
+</script>
 
 </body>
 </html>
