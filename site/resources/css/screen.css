@@ -211,3 +211,17 @@ ul.buzz{width:280px; margin:5px auto}
 #content-wraper #content-area h4{ font-size:24px;padding:10px 0}
 #content-wraper #content-area .content-images-2{ float:left; margin-right:20px}
 #content-wraper #content-area .content-images-3{ margin-bottom:20px}
+/*----contact us-------*/
+#content-wraper #content-area h2, #content-wraper #content-area select, #content-wraper #content-area select:hover{font-weight:bold; padding:8px 20px; background:rgb(237,237,237); background:-moz-linear-gradient(top, rgba(237,237,237,1) 1%,rgba(219,219,219,1) 100%); background:-webkit-gradient(linear,left top,left bottom,color-stop(1%,rgba(237,237,237,1)),color-stop(100%,rgba(219,219,219,1))); background:-webkit-linear-gradient(top, rgba(237,237,237,1) 1%,rgba(219,219,219,1) 100%); background:-o-linear-gradient(top, rgba(237,237,237,1) 1%,rgba(219,219,219,1) 100%); background:-ms-linear-gradient(top, rgba(237,237,237,1) 1%,rgba(219,219,219,1) 100%); background:linear-gradient(top, rgba(237,237,237,1) 1%,rgba(219,219,219,1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed',endColorstr='#dbdbdb',GradientType=0 );  box-shadow:-1px -1px 0 rgba(255,255,255,0.5) inset;  -moz-border-radius-topleft:5px; -moz-border-radius-topright:0px; -moz-border-radius-bottomright:5px; -moz-border-radius-bottomleft:0px; -webkit-border-radius:5px 0px 5px 0px; border-radius:5px 0px 5px 0px; color:#999; border:1px solid #CCC; font-size:14px; text-shadow:1px 1px 0 #FFF; clear:both; display:block}
+#content-wraper #content-area h2.quote{margin:5px 0}
+#content-wraper #content-area select{width:320px !important; padding:0 !important; height:22px; text-shadow:none !important; margin:10px 0}
+#content-wraper #content-area .addresses{margin:10px 0}
+#content-wraper #content-area .addresses p.add1{float:left}
+#content-wraper #content-area .addresses ul.add1, ul.add2{width:300px;padding:0 !important; margin:0 0 10px 0 !important; float:left}
+#content-wraper #content-area .addresses .add1, .add2{width:100px;}
+#content-wraper #content-area .addresses ul li{padding:0 !important; margin:2px !important; background:none !important}
+#content-wraper #content-area h3.anti-spam{ font-size:16px !important}
+#content-wraper #content-area .addresses ul li.head{ padding:0 !important; text-decoration:underline}
+#content-wraper #content-area label{clear:both; margin:5px}
+#content-wraper #content-area input{ width:500px !important; margin:25px}
+#commentinput{ width:500px; margin:10px 0}
