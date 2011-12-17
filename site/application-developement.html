@@ -43,7 +43,7 @@ ddaccordion.init({
 	persiststate: true, //persist state of opened contents within browser session?
 	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
 	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
-	animatespeed: "normal", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	animatespeed: "slow", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
 	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
 		//do nothing
 	},
@@ -150,20 +150,20 @@ loadedobjects+=file+" " //Remember this object as being already added to page
 			<div id="dropmenu" >
            	  <div class="">
                 <h3 id="main" headerindex="0h" class="headerbar selected">
-                    <a href="javascript:ajaxpage('application-developement_ajax.html', 'rightcolumn');">Application developement</a>
+                    <a class="clearfix" href="javascript:ajaxpage('application-developement_ajax.html', 'rightcolumn');">Application developement</a>
                 </h3>
                 <ul style="display: block;" contentindex="0c" class="submenu">
-                <li><a href="javascript:ajaxpage('pages/web-applications.html', 'rightcolumn');">Web Based Solutions</a></li>
-                <li><a href="javascript:ajaxpage('pages/social-media-applications.html', 'rightcolumn');">Social Media Application</a></li>
+                <li><a class="clearfix" href="javascript:ajaxpage('pages/web-applications.html', 'rightcolumn');">Web Based Solutions</a></li>
+                <li><a class="clearfix" href="javascript:ajaxpage('pages/social-media-applications.html', 'rightcolumn');">Social Media Application</a></li>
                 </ul>
                 
                 <h3 headerindex="1h" class="headerbar">
-                	<a href="javascript:ajaxpage('pages/mobile-developement.html', 'rightcolumn');">Mobile Applications</a></h3>
+                	<a class="clearfix" href="javascript:ajaxpage('pages/mobile-developement.html', 'rightcolumn');">Mobile Applications</a></h3>
                 <ul style="display: none;" contentindex="1c" class="submenu">
-                <li><a href="javascript:ajaxpage('pages/iphone-ipad.html', 'rightcolumn');">iOS (iPhone & iPad) & Android</a></li>
-                <li><a href="javascript:ajaxpage('pages/cross-platform.html', 'rightcolumn');">Cross Platform</a></li>
+                <li><a class="clearfix" href="javascript:ajaxpage('pages/iphone-ipad.html', 'rightcolumn');">iOS (iPhone & iPad) & Android</a></li>
+                <li><a class="clearfix" href="javascript:ajaxpage('pages/cross-platform.html', 'rightcolumn');">Cross Platform</a></li>
                 </ul>
-                <h3 headerindex="1h" class="headerbar"><a href="javascript:ajaxpage('pages/quality-analysis.html', 'rightcolumn');">Testing / QA Services</a></h3>
+                <h3 headerindex="1h" class="headerbar"><a class="clearfix" href="javascript:ajaxpage('pages/quality-analysis.html', 'rightcolumn');">Testing / QA Services</a></h3>
             </div>
 			</div>        
     </div>

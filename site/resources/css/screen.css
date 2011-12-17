@@ -183,10 +183,10 @@ ul.buzz{width:280px; margin:5px auto}
 
 #sidebar #dropmenu  ul li,#sidebar #dropmenu  h3{background:url(../img/side-bar-menubg.jpg) no-repeat; font-size:14px;width:auto;height:40px}
 #sidebar #dropmenu ul.submenu li,#sidebar #dropmenu  h3.selected{ background:url(../img/side-bar-menubg-hover.jpg) no-repeat; font-size:14px;color:#FFF}
-#sidebar #dropmenu  h3.selected a{color:#fff}
-#sidebar #dropmenu ul.submenu li a{ color:#fff}
+#sidebar #dropmenu  h3.selected a{color:#FFF}
+#sidebar #dropmenu ul.submenu li a{ color:#666}
 #sidebar #dropmenu  ul li a{font-size:18px;color:#666;padding:20px 30px}
-#sidebar #dropmenu  h3 a{font-size:22px;color:#666;padding:15px 20px}
+#sidebar #dropmenu  h3 a{font-size:22px;color:#666;padding:5px 20px}
 
 #content-wraper #sidebar ul#accordion-1 li.main-item-sidemenu { background:url(../img/side-bar-menubg.jpg) no-repeat; font-size:14px}
 #content-wraper #sidebar ul#accordion-1 li.main-item-sidemenu:hover{ background:url(../img/side-bar-menubg-hover.jpg) no-repeat; color:#FFF}
@@ -225,3 +225,15 @@ ul.buzz{width:280px; margin:5px auto}
 #content-wraper #content-area label{clear:both; margin:5px}
 #content-wraper #content-area input{ width:500px !important; margin:25px}
 #commentinput{ width:500px; margin:10px 0}
+
+#sidebar #dropmenu ul.submenu{    background: none repeat scroll 0 0 #747474;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 12px;
+    ;
+    padding: 10px;}
+	
+#sidebar #dropmenu ul.submenu li	{background: url("../img/side-bar-menubg.jpg") no-repeat scroll 0 0 transparent;
+    border-radius: 3px 3px 3px 3px;
+    margin: 2px;}
+	#sidebar #dropmenu ul.submenu li a{ padding:10px}
