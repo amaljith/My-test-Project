@@ -76,10 +76,7 @@ background: -o-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
 background: -ms-linear-gradient(top,  #fff 0%,#EBEDEE 100%);
 background: linear-gradient(top,  #fff 0%,#EBEDEE 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#EBEDEE',GradientType=0 );
--webkit-box-shadow: inset 0px 0px 2px 2px #b1b1b1;
--moz-box-shadow: inset 0px 0px 2px 2px #b1b1b1;
-box-shadow: inset 0px 0px 2px 2px #b1b1b1; 
-}
+ border:1px solid #ccc}
 
 #catogery-container .catogery-box h3{
 -moz-border-radius-topleft: 5px;
